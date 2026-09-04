@@ -19,6 +19,16 @@ form.addEventListener("submit", function(event){
 
 //  (trim ) esliye use kr raha hu agar user inpute spce de kar kar raha ha to us space ko remove krne ka kmm krta ha exam = "   Aryan   "  => agar es trha se input krta ha to {trim } ka use krne se extra space hat jata ha 
 
+
+const userData ={
+  name: names,
+  email:email,
+  password:passwords,
+
+};
+
+localStorage.setItem("userData", JSON.stringify(userData));
+
 const term= document.getElementById("terms").checked;
 
 if(names === " "){

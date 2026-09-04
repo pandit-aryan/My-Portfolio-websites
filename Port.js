@@ -33,26 +33,27 @@ form.addEventListener("submit", (e)=>{
 
 //  seconds parts changes parts of skiles
 
-let percent=document.querySelectorAll(".percentage");
-let progreSet=Document.querySelectorAll(".progress");
+// let percent=document.querySelectorAll(".percentage");
 
-percent.forEach((percent, index) => {
-  let count= 0;
-  let target = Number(progress[index].dataset.target);
-  let animation = setInterval(() => {
-    count++;
-    percent.textContent = count + "%";
-    progreSet[index].style.width = count + "%";
+// let progreSet = Document.querySelectorAll(".progress");
 
-
-
-    if(count>=target){
-      clearInterval(animation);
-    }
-  }, 20);
+// progreSet.forEach((percent, index) => {
+//   let count= 0;
+//   let target = Number(progress[index].dataset.target);
+//   let animation = setInterval(() => {
+//     count++;
+//     progreSet.textContent = count + "%";
+//     progreSet[index].style.width = count + "%";
 
 
-});
+
+//     if(count>=target){
+//       clearInterval(animation);
+//     }
+//   }, 20);
+
+
+// });
 
 
 
