@@ -1,0 +1,361 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg,#0B1120, #1E3A8A);
+
+}
+
+.navBar{
+padding: 0 30px;
+}
+
+
+.nav-Link{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  justify-content: end;
+  border: black;
+  border-radius: 5px;
+  background-color: #E5E7EB;
+}
+
+.nav-Link a {
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  color: azure;
+
+
+}
+
+.nav-Link a:hover{
+  color: orange;
+  
+}
+
+h1 {
+  
+  color: #E5E7EB;
+}
+
+h3{
+  color:white;
+
+
+}
+
+h2 {
+  color: white;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+border-radius: 27px;
+font-size: 28px;
+/* text-decoration: underline; */
+
+}
+
+
+
+.banner{
+  display: flex;
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  
+}
+
+.hero-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 11px;
+  
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.image-container img{
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.apply_box{
+    max-width: 500px;
+    padding: 20px;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 4px  3px 5px hsl(90, 100%, 50%);
+    border-radius: 20px;
+ }
+
+.title_small{
+    font-size: 20px;
+}
+
+.form_container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    gap: 20px;
+}
+
+
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+ }
+
+  label{
+ font-size: 18px;
+ margin-bottom: 5px;
+ color:#E5E7EB ;
+}  
+
+
+
+span{
+  color: chartreuse;
+}
+
+input{
+    padding: 6px 10px;
+    border: 2px solid #8a2be2;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+}
+
+.submit{
+ color: #E5E7EB;
+}
+
+button{
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin: 20px ,auto;
+}
+
+p{
+  display: flex;
+  color: azure;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  /* text-decoration: underline; */
+  font-size: 28px;
+}
+
+
+
+
+
+.contact{
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #1e293b;
+  border-radius: 50px;
+border-color: chartreuse;
+}
+
+.contact h2{
+  text-align: center;
+  color: #E5E7EB;
+  margin-bottom: 20px;
+}
+
+.Contact_control{
+  margin-bottom: 15px;
+  
+
+}
+
+
+
+
+button{
+  width: 25%;
+  padding: 5px;
+  color: #E5E7EB;
+  border: none;
+  border-radius: 15px;
+  justify-content: right;
+  align-items: right;
+  cursor: pointer;
+
+}
+
+button:hover{
+  background: #16a34a;
+}
+
+
+
+
+footer{
+
+padding: 30px ;
+}
+
+
+.footer-contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+gap: 40px;
+  /* margin-bottom: 15px; */
+
+}
+
+
+.footer-contact p{
+   max-width: 400px;
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+.socail{
+
+ width: 40%;
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+
+}
+.socail a{
+
+  text-decoration: none;
+  justify-content: center;
+  padding: 12px  20px ;
+  font-weight: bold;
+  align-items: center;
+  color: #E5E7EB;
+}
+
+form{
+    box-shadow: 4px  3px 5px hsl(90, 100%, 50%);
+}
+
+
+
+
+/*  animation portion start */
+
+/* img:hover{
+  transform: rotateY(180deg);
+} */
+
+
+.move {
+  transition: 0.6s;
+}
+
+.move:hover{
+  transform: 
+  perspective(1000px)
+  rotateX(15deg)
+  rotateY(20deg'angle')
+  rotateZ(5deg'angle')
+  scale(1.1);
+
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5)
+
+  ;
+}
+
+
+
+
+
+/*  agarimages ko hover karte move (motion) kare to ya wala effect use kro */
+
+
+
+.move:hover{
+  animation: float 2s infinite alternate;
+
+}
+
+@keyframes float{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-15px);
+  }
+
+}
+
+
+.move{
+    transition: 0.5s;
+}
+
+.move:hover{
+    animation: around3D 2s infinite linear;
+}
+
+@keyframes around3D{
+    0%{
+        transform: translate(0,0) rotateY(0deg);
+    }
+    25%{
+        transform: translate(15px,-10px) rotateY(15deg);
+    }
+    50%{
+        transform: translate(30px,0) rotateY(0deg);
+    }
+    75%{
+        transform: translate(15px,10px) rotateY(-15deg);
+    }
+    100%{
+        transform: translate(0,0) rotateY(0deg);
+    }
+}
+
+
+
+ .move{
+    transition: transform 1s ease;
+}
+
+.move:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+
+.blank{
+  color: #E5E7EB;
+}

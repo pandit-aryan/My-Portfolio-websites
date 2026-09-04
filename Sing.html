@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Singup</title>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+
+    background-color: #081b29;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .Singup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    min-height: 100vh;
+
+  }
+
+  .Singup-fildset {
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 1rem;
+
+  }
+
+  .Singup-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 15px;
+
+  }
+
+  #t {
+    text-align: center;
+    font-size: 1.6em;
+
+  }
+
+  #name {
+
+    margin-top: 10px;
+  }
+
+  #email {
+
+    margin-top: 10px;
+  }
+
+  #password {
+
+    margin-top: 10px;
+  }
+
+  #ConPassword {
+
+    margin-top: 10px;
+  }
+
+  .Singup-form input {
+    line-height: 25px;
+    font-size: 15px;
+    /* cursor: wait; */
+
+
+  }
+
+  .Singup-container button {
+    display: flex;
+    padding: 10px;
+    height: 55%;
+    width: 50%;
+    border-radius: 1rem;
+    background: linear-gradient(45deg,
+        #00eeff,
+        #ffffff #ff00ff);
+
+    box-shadow: 0 0 30px #00eeff,
+      0 0 70px #00eeff;
+  }
+
+
+  .btn {
+    font-size: 20px;
+    background-color: #00eeff;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .re {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* .login a{
+   height: 55%;
+  width: 50%;
+  border-radius: 1rem;
+  margin-left: 20px;
+} */
+</style>
+
+<body>
+  <section>
+    <form class="Singup-container">
+      <fieldset class="Singup-fildset">
+        <legend id="t">Personal Information</legend>
+
+        <div class="Singup-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="Singup-form">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="Singup-form">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="Singup-form">
+          <label for="ConPassword">Confirm Password</label>
+          <input type="password" id="ConPassword" placeholder="Confirm your password">
+        </div><br>
+
+        <lable class="re">
+          <input type="checkbox" id="terming"></input>
+          Remember me !
+        </lable><br>
+        <lable>
+          <input type="checkbox" id="terms">
+          <span> I agree to the terms & conditions</span>
+        </lable>
+        <button type="submit" class="btn">Singup</button><br>
+        <!-- <p class="login">
+        Already have an account? 
+        <a href="login.html"><button>Login</button></a>
+      </p> -->
+      </fieldset>
+    </form>
+  </section>
+
+
+  <script src="Sing.js"></script>
+</body>
+
+</html>
